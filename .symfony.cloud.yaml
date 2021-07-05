@@ -12,6 +12,8 @@ runtime:
         - iconv
         
 
+relationships:
+    database: "db:postgresql"
 #variables:
 #    php:
 #        # uncomment on PHP 7.4+
@@ -46,6 +48,3 @@ hooks:
         set -x -e
 
         (>&2 symfony-deploy)
-
-relationships:
-database: "db:postgresql"
